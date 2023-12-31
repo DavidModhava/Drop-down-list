@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUER P.F-2</title>
+    <link rel="stylesheet" href="Drop down.css" type="text/css">
+    <script src="Drop down.js"></script>
+</head>
+<body>
+    <div id="mn">
+        <p id="eng">Engineers</p>
+        <p>Doctors </p>
+        <p>Teachers</p>
+        <p>Soldiers</p>
+        <p>Artists</p>
+        <p>Athlets</p>
+        <p>Scientist</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#eng").click(function(){
+                $("#mo").toggle();
+                $("#mp").hide();
+                $("#pop").hide();
+            });
+        });
+    </script>
+    
+
+    <!-- <div>
+        <p>Cardilogist</p>
+        <p>Nuerologis</p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div> -->
+    
+
+
+    <div id="mo">
+        <p id="ce">Civil Engineer</p>
+        <p>Mechanical Engineer</p>
+        <p>Electrical Engineer</p>
+        <p>Software Engineer</p>
+        <p>Auto mobiles Engineer</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#ce").click(function(){
+                $("#mp").toggle();
+                $("#pop").hide();
+            });
+        });
+    </script>
+    
+
+    <div id="mp">
+        <p id="rl">Railways </p>
+        <p>Roads</p>
+        <p>Bridges</p>
+        <p>Irrigation</p>
+        <p>Buildings</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#rl").click(function(){
+                $("#pop").toggle();
+            });
+        });
+    </script>
+    
+
+    <div id="pop"><h4>Hai Welcome To Railways</h4></div>
+    
+    
+  
+</body>
+</html>
